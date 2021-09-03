@@ -84,7 +84,7 @@ set_hitbox_value(AT_JAB, 1, HG_DAMAGE, 3);
 set_hitbox_value(AT_JAB, 1, HG_ANGLE, 60);
 set_hitbox_value(AT_JAB, 1, HG_BASE_KNOCKBACK, 4);
 set_hitbox_value(AT_JAB, 1, HG_BASE_HITPAUSE, 4);
-set_hitbox_value(AT_JAB, 1, HG_HITPAUSE_SCALING, 0.25);
+set_hitbox_value(AT_JAB, 1, HG_HITPAUSE_SCALING, 0);
 set_hitbox_value(AT_JAB, 1, HG_FORCE_FLINCH, 1); //i added this to make tilts link more reliably
 set_hitbox_value(AT_JAB, 1, HG_HIT_SFX, asset_get("sfx_blow_weak1"));
 set_hitbox_value(AT_JAB, 1, HG_TECHABLE, 0); //this is the default
@@ -131,7 +131,7 @@ set_hitbox_value(AT_JAB, 3, HG_ANGLE_FLIPPER, 6);
 set_hitbox_value(AT_JAB, 3, HG_ANGLE, 60); //i had to remove the spike angle to make the jab2->jab3 confirm techable
 set_hitbox_value(AT_JAB, 3, HG_BASE_KNOCKBACK, 4); //base knockback was reduced once the angle was changed, as the base 6 knockback was too high for teching
 set_hitbox_value(AT_JAB, 3, HG_BASE_HITPAUSE, 4);
-set_hitbox_value(AT_JAB, 3, HG_HITPAUSE_SCALING, 0.25);
+set_hitbox_value(AT_JAB, 3, HG_HITPAUSE_SCALING, 0);
 //set_hitbox_value(AT_JAB, 2, HG_VISUAL_EFFECT, small_wood_hfx);
 //set_hitbox_value(AT_JAB, 2, HG_VISUAL_EFFECT_X_OFFSET, 24);
 set_hitbox_value(AT_JAB, 3, HG_HIT_SFX, asset_get("sfx_blow_medium1"));
@@ -157,7 +157,7 @@ set_hitbox_value(AT_JAB, 4, HG_ANGLE, 40);
 set_hitbox_value(AT_JAB, 4, HG_BASE_KNOCKBACK, 3);
 set_hitbox_value(AT_JAB, 4, HG_BASE_HITPAUSE, 9);
 set_hitbox_value(AT_JAB, 4, HG_EXTRA_HITPAUSE, 6);
-set_hitbox_value(AT_JAB, 4, HG_HITPAUSE_SCALING, .5);
+set_hitbox_value(AT_JAB, 4, HG_HITPAUSE_SCALING, 0);
 set_hitbox_value(AT_JAB, 4, HG_VISUAL_EFFECT_X_OFFSET, 24);
 set_hitbox_value(AT_JAB, 4, HG_HIT_SFX, asset_get("sfx_blow_medium2"));
 set_hitbox_value(AT_JAB, 4, HG_HITBOX_GROUP, -1);
