@@ -361,16 +361,18 @@ if(attack == AT_USPECIAL){
         state = PS_PRATLAND    
     
     }
-            
-            
-        
-        
-        
-        
-        
-        
     
-    
+}
+
+if (attack == AT_NSPECIAL){
+	if (window == 3 && window_timer == (get_window_value(AT_NSPECIAL, 3, AG_WINDOW_LENGTH) - 1) && !has_hit_player){
+		window = 8;
+		window_timer = 0;
+	}
+	if (window == 8 && window_timer == (get_window_value(AT_NSPECIAL, 8, AG_WINDOW_LENGTH) - 1)){
+		window = 9;
+		window_timer = 0;
+	}
 }
     
     //#endregion
