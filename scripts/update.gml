@@ -105,3 +105,13 @@ if instance_exists(hat_object) {
 if state == PS_PARRY && state_timer == 1 {
 	spawn_hit_fx(x,y-45,fx_parry)
 }
+
+//Make hatted person be in the hat (tm)
+if (hatted_id != undefined) {
+    hatted_id.x = x;
+    hatted_id.y = y - 10;
+    hatted_id.hsp = 0;
+    hatted_id.vsp = 0;
+    hatted_id.state = PS_HITSTUN;
+    hatted_id.visible = false;
+}

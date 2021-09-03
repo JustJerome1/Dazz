@@ -160,6 +160,10 @@ uspec_spin_point_move_old = 0;
 uspec_spin_change = false;
 uspec_spin_dif = 0;
 
+//nspec
+hatted_id = undefined; //Grabbed player's ID
+
+
 
 //effects
 fx_parry = hit_fx_create(sprite_get("parry_effect"),12);

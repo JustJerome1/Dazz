@@ -365,6 +365,15 @@ if(attack == AT_USPECIAL){
 }
 
 if (attack == AT_NSPECIAL){
+	//Reveal hatted player to be launched
+	if (window == 6 && hatted_id != undefined){
+		hatted_id.visible = true;
+		hatted_id.invincible = false;
+		hatted_id.x = x + (50 * spr_dir);
+		hatted_id = undefined;
+	}
+
+	//Whiff Animation
 	if (window == 3 && window_timer == (get_window_value(AT_NSPECIAL, 3, AG_WINDOW_LENGTH) - 1) && !has_hit_player){
 		window = 8;
 		window_timer = 0;
