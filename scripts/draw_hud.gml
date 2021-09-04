@@ -1,4 +1,4 @@
-if ("hat_object" not in self) exit;
+/*if ("hat_object" not in self) exit;
 
 var hat = instance_exists(hat_object) ? "Hatless" : "Hat"
 draw_debug_text(temp_x,temp_y-60,"Hat mode: " + hat)

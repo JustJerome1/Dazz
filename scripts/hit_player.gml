@@ -81,6 +81,9 @@ switch my_hitboxID.attack
 	case AT_DSTRONG:
 		sound_play(asset_get("sfx_forsburn_reappear_hit"),false,0,0.65,0.85)
 		sound_play(asset_get("sfx_kragg_rock_pillar"),false,0,0.45,1.85)
+		if my_hitboxID.hbox_num == 3 {
+			sound_play(asset_get("sfx_blow_heavy2"))
+		}
 		break;
 		
 	case AT_USTRONG:
@@ -128,4 +131,8 @@ if (my_hitboxID.attack == AT_NSPECIAL && my_hitboxID.hbox_num == 1 && !hit_playe
     hatted_id = hit_player_obj.id;
     hatted_id.invincible = true;
     hatted_id.invince_time = 40;
+}
+	case AT_UAIR: 
+	sound_play(asset_get("sfx_bite"))
+	break;
 }

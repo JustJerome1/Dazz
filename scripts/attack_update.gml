@@ -7,9 +7,17 @@ switch (attack)
 {
 	case AT_EXTRA_2:
 		if window == 2 and window_timer == 7 and !hitpause
+		if window == 2 and window_timer == 5 and !hitpause
 		{
 			sound_play(asset_get("sfx_swipe_medium2"))	
 		}
+		if has_hit {
+		set_hitbox_value(AT_EXTRA_2, 4, HG_WIDTH, 106);
+		set_hitbox_value(AT_EXTRA_2, 4, HG_HEIGHT, 96);
+	} else {
+		reset_hitbox_value(AT_EXTRA_2, 4, HG_WIDTH);
+		reset_hitbox_value(AT_EXTRA_2, 4, HG_HEIGHT);
+	}
 	break;
 	case AT_EXTRA_1: //setting hurtbox cause if you use set_attack it doesn't update the hurtbox for some reason
 		if instance_exists(hat_object) {
@@ -170,6 +178,13 @@ switch (attack)
 	case AT_DAIR:
 		if window == 4 and window_timer == 3 vsp -= 4
 		break;
+	case AT_NAIR:
+	if window == 1 && window_timer == 1 {
+		sound_play(sound_get("ftilt"))
+	}
+	break;
+
+
 	// case AT_BAIR:
 	// 	switch (window)
 	//     {
