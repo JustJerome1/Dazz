@@ -11,6 +11,13 @@ switch (attack)
 			sound_play(asset_get("sfx_swipe_medium2"))	
 		}
 	break;
+	case AT_EXTRA_1: //setting hurtbox cause if you use set_attack it doesn't update the hurtbox for some reason
+		if instance_exists(hat_object) {
+			hurtboxID.sprite_index = sprite_get("fair2_hatless_hurt")
+		} else {
+			hurtboxID.sprite_index = sprite_get("fair2_hurt")
+		}
+		break;
 	case AT_FSPECIAL:
 		can_move = false;
 		vsp = sign(vsp) == -1 ? vsp : floor(lerp(vsp, 0, 0.1))

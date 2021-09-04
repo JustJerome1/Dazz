@@ -9,6 +9,11 @@ switch my_hitboxID.attack
 {
 	case AT_JAB:
 		if my_hitboxID.hbox_num == 4 hit_jab3 = true;
+		//gamefeel juice
+		if my_hitboxID.hbox_num != 2 {
+			sound_play(asset_get("sfx_ell_steam_hit"),false,0,0.45,1.35)
+			sound_play(asset_get("sfx_ori_energyhit_weak"),false,0,0.55,1.65)
+		}
 	break;
 	case AT_DAIR:
 		var hb, vsp_to_apply;
@@ -49,6 +54,9 @@ switch my_hitboxID.attack
 			}
 			//hit_player_obj.y = lerp(hit_player_obj.y, y-6, 0.15)			
 		}
+		//gamefeel juice
+		sound_play(asset_get("sfx_ell_steam_hit"),false,0,0.45,1.35)
+		sound_play(asset_get("sfx_ori_energyhit_weak"),false,0,0.55,1.65)
 	break;
 	
 	// // strongs code both for gamefeel and functionality
@@ -79,6 +87,30 @@ switch my_hitboxID.attack
 		sound_play(asset_get("sfx_ori_charged_flame_hit"),false,0,0.85,0.85)
 		//sound_play(asset_get("sfx_zetter_fireball_fire"),false,0,0.35,1.65)
 		break;
+	
+	//other normals gamefeel code
+	case AT_FTILT:
+		sound_play(asset_get("sfx_ell_steam_hit"),false,0,0.45,1.35)
+		sound_play(asset_get("sfx_ori_energyhit_weak"),false,0,0.55,1.65)
+		break;
+	case AT_UTILT:
+		sound_play(asset_get("sfx_ell_steam_hit"),false,0,0.45,1.35)
+		sound_play(asset_get("sfx_ori_energyhit_weak"),false,0,0.55,1.65)
+		break;
+	case AT_DTILT:
+		sound_play(asset_get("sfx_ell_steam_hit"),false,0,0.45,1.35)
+		sound_play(asset_get("sfx_ori_energyhit_weak"),false,0,0.55,1.65)
+		break;
+	case AT_BAIR:
+		sound_play(asset_get("sfx_ell_steam_hit"),false,0,0.45,1.35)
+		sound_play(asset_get("sfx_ori_energyhit_heavy"),false,0,0.55,1.65)
+		break;
+	case AT_EXTRA_2: //hatless uair
+		if my_hitboxID.hbox_num != 4 {
+			sound_play(asset_get("sfx_ell_steam_hit"),false,0,0.45,1.35)
+			sound_play(asset_get("sfx_ori_energyhit_weak"),false,0,0.55,1.65)
+		}
+		break;
 	case AT_DSPECIAL_2:
 		if my_hitboxID.hbox_num == 3
 		{
@@ -87,6 +119,8 @@ switch my_hitboxID.attack
 			sound_play(asset_get("sfx_absa_concentrate"));
 		}
 		break;
+	
+	
 }
 
 //Grabs player

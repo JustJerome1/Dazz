@@ -68,6 +68,32 @@ if instance_exists(hat_object) {
             set_attack_value(AT_DAIR, AG_SPRITE, sprite_get("dair_hatless"));
             set_attack_value(AT_DAIR, AG_HURTBOX_SPRITE, sprite_get("dair_hatless_hurt"));
             break;
+        case AT_NAIR:
+            set_attack_value(AT_NAIR, AG_SPRITE, sprite_get("nair_hatless"));
+            set_attack_value(AT_NAIR, AG_HURTBOX_SPRITE, sprite_get("nair_hatless_hurt"));
+            break;
+        case AT_BAIR:
+            set_attack_value(AT_BAIR, AG_SPRITE, sprite_get("bair_hatless"));
+            set_attack_value(AT_BAIR, AG_HURTBOX_SPRITE, sprite_get("bair_hatless_hurt"));
+            break;
+        case AT_FAIR:
+            set_attack_value(AT_FAIR, AG_SPRITE, sprite_get("fair_hatless"));
+            set_attack_value(AT_FAIR, AG_HURTBOX_SPRITE, sprite_get("fair_hatless_hurt"));
+            set_attack_value(AT_EXTRA_1, AG_SPRITE, sprite_get("fair2_hatless"));
+            set_attack_value(AT_EXTRA_1, AG_HURTBOX_SPRITE, sprite_get("fair2_hatless_hurt"));
+            break;
+        case AT_USTRONG:
+            set_attack_value(AT_USTRONG, AG_SPRITE, sprite_get("ustrong_hatless"));
+            set_attack_value(AT_USTRONG, AG_HURTBOX_SPRITE, sprite_get("ustrong_hatless_hurt"));
+            break;
+        //case AT_DSTRONG: //for when hatless dstrong sprite exists
+        //    set_attack_value(AT_DSTRONG, AG_SPRITE, sprite_get("dstrong_hatless"));
+        //    set_attack_value(AT_DSTRONG, AG_HURTBOX_SPRITE, sprite_get("dstrong_hatless_hurt"));
+        //    break;
+        case AT_FSTRONG:
+            set_attack_value(AT_FSTRONG, AG_SPRITE, sprite_get("fstrong_hatless"));
+            set_attack_value(AT_FSTRONG, AG_HURTBOX_SPRITE, sprite_get("fstrong_hatless_hurt"));
+            break;
         
         //attacks that change based on hat or nah
         case AT_FSPECIAL:
@@ -107,9 +133,34 @@ if instance_exists(hat_object) {
             set_attack_value(AT_DAIR, AG_SPRITE, sprite_get("dair"));
             set_attack_value(AT_DAIR, AG_HURTBOX_SPRITE, sprite_get("dair_hurt"));
             break;
-        
-        
-        
+        case AT_NAIR:
+            set_attack_value(AT_DAIR, AG_SPRITE, sprite_get("nair"));
+            set_attack_value(AT_DAIR, AG_HURTBOX_SPRITE, sprite_get("nair_hurt"));
+            break;
+        case AT_BAIR:
+            set_attack_value(AT_BAIR, AG_SPRITE, sprite_get("bair"));
+            set_attack_value(AT_BAIR, AG_HURTBOX_SPRITE, sprite_get("bair_hurt"));
+            break;
+        case AT_FAIR:
+            set_attack_value(AT_FAIR, AG_SPRITE, sprite_get("fair"));
+            set_attack_value(AT_FAIR, AG_HURTBOX_SPRITE, sprite_get("fair_hurt"));
+            set_attack_value(AT_EXTRA_1, AG_SPRITE, sprite_get("fair2"));
+            set_attack_value(AT_EXTRA_1, AG_HURTBOX_SPRITE, sprite_get("fair2_hurt"));
+            break;
+        case AT_USTRONG:
+            set_attack_value(AT_USTRONG, AG_SPRITE, sprite_get("ustrong"));
+            set_attack_value(AT_USTRONG, AG_HURTBOX_SPRITE, sprite_get("ustrong_hurt"));
+            break;
+        //case AT_DSTRONG: //for when hatless dstrong sprite exists
+        //    set_attack_value(AT_DSTRONG, AG_SPRITE, sprite_get("dstrong"));
+        //    set_attack_value(AT_DSTRONG, AG_HURTBOX_SPRITE, sprite_get("dstrong_hurt"));
+        //    break;
+        case AT_FSTRONG:
+            set_attack_value(AT_FSTRONG, AG_SPRITE, sprite_get("fstrong"));
+            set_attack_value(AT_FSTRONG, AG_HURTBOX_SPRITE, sprite_get("fstrong_hurt"));
+            break;
+            
+            
         
     }
 }

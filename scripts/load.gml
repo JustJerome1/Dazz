@@ -27,7 +27,7 @@ sprite_change_offset("dattack", 64, 88);
 sprite_change_offset("ftilt", 66, 94);
 sprite_change_offset("dtilt", 26,62);
 sprite_change_offset("utilt", 90, 126);
-sprite_change_offset("nair", 76, 94);
+sprite_change_offset("nair", 60, 80);
 sprite_change_offset("fair", 38, 92);
 sprite_change_offset("fair2", 36, 88);
 sprite_change_offset("bair", 110, 106);
@@ -103,13 +103,13 @@ sprite_change_offset("dattack_hatless", 64, 88);
 sprite_change_offset("ftilt_hatless", 72, 94);
 sprite_change_offset("dtilt_hatless", 48,62); 
 sprite_change_offset("utilt_hatless", 90, 126);
-sprite_change_offset("nair_hatless", 76, 94); //needs sprite
+sprite_change_offset("nair_hatless", 76, 94);
 sprite_change_offset("fair_hatless", 38, 92); //needs sprite
 sprite_change_offset("fair2_hatless", 36, 88); //needs sprite
-sprite_change_offset("bair_hatless", 110, 106); //needs sprite
+sprite_change_offset("bair_hatless", 110, 106);
 sprite_change_offset("dair_hatless", 44, 84); 
-sprite_change_offset("fstrong_hatless", 48, 126); //needs sprite
-sprite_change_offset("ustrong_hatless", 104, 158); //needs sprite
+sprite_change_offset("fstrong_hatless", 36, 100);
+sprite_change_offset("ustrong_hatless", 82, 128);
 sprite_change_offset("dstrong_hatless", 102, 176); //needs sprite
 sprite_change_offset("nspecial_hatless", 64, 94); //needs sprite
 sprite_change_offset("fspecial_hatless", 42,80);
@@ -122,10 +122,11 @@ sprite_change_offset("parry_effect", 21,21);
 sprite_change_offset("hfx_big_black", 96,96);
 sprite_change_offset("hfx_small_black", 50,50);
 
-//dspecial_stuff:
+//article_sprites:
 sprite_change_offset("roger", 96, 115);
 sprite_change_offset("selfdetonate", 202, 332);
 sprite_change_offset("selfdetonate_startup", 202, 332);
+//dspecial_stuff:
 sprite_change_offset("8_ball", 16,16);
 
 var size = ["bot","mid","top"];

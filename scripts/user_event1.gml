@@ -121,6 +121,7 @@ switch (first_item)
 return (array_find_index(ar, first) != -1) - 1
 
 #define getItem()
+/// getItem(_roll)
 var _roll = argument0;
 
 var result = -1;
