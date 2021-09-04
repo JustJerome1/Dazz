@@ -131,4 +131,29 @@ if attack == AT_FSTRONG && hbox_num == 1 {
     }
 }
 
+if attack == AT_DSPECIAL_2{
+    if (hbox_num == 3)
+    {
+        if (position_meeting(x, y + 15, asset_get("par_block")))
+        destroyed = true;
+        
+        if (otto_hitpause == 1)
+        {
+            if (hitpause_frames > 0)
+            {
+                hitpause_frames--;
+                vsp = 0;
+                hsp = 0;
+                grav = 0;
+            }
+            else 
+            {
+                vsp = -4;
+                grav = 0.2;
+                otto_hitpause = 0;
+                hitpause_frames = 18;
+            }
+        }
+    }
+}
 

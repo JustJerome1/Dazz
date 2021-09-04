@@ -9,3 +9,6 @@ if attack == AT_FSTRONG && hbox_num == 1 {
     with(player_id){other.clydespeed = get_hitbox_value(AT_FSTRONG,1,HG_PROJECTILE_HSPEED)}; //the speed that it's set to, change in the fstrong.gml's hitbox hspeed
     clydehit = false; //if clyde has hit someone
 }
+
+otto_hitpause = 0;
+hitpause_frames = 18;

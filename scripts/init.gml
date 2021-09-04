@@ -172,6 +172,8 @@ fx_parry = hit_fx_create(sprite_get("parry_effect"),12);
 exec_item_obj = noone;
 roger = noone;
 
+otto_effect = hit_fx_create(sprite_get("hfx_big_black"), 48)
+otto_create = hit_fx_create(sprite_get("hfx_small_black"), 32)
 explosion = hit_fx_create(sprite_get("selfdetonate"), 55)
 active = 0;
 

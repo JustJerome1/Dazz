@@ -93,7 +93,17 @@ switch (first_item)
 	
 	//OTTO1 8-BALL
 	case 7:
-	
+	if (hat_exists == 1)
+	{
+		create_hitbox(AT_DSPECIAL_2, 3, hat_object.x, hat_object.y - 40);
+		spawn_hit_fx(hat_object.x, hat_object.y - 45, otto_create)
+	}
+	else
+	{
+		create_hitbox(AT_DSPECIAL_2, 3, x, y - 40);
+		spawn_hit_fx(x, y - 90, otto_create)
+	}
+	sound_play(asset_get("sfx_fish_collect"));
 	break;
 	
 	//N/A BEAM

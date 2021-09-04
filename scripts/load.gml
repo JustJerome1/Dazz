@@ -119,11 +119,14 @@ sprite_change_offset("taunt_hatless", 72, 80); //needs sprite
 
 //effects
 sprite_change_offset("parry_effect", 21,21);
+sprite_change_offset("hfx_big_black", 96,96);
+sprite_change_offset("hfx_small_black", 50,50);
 
-//article_sprites:
+//dspecial_stuff:
 sprite_change_offset("roger", 96, 115);
 sprite_change_offset("selfdetonate", 202, 332);
 sprite_change_offset("selfdetonate_startup", 202, 332);
+sprite_change_offset("8_ball", 16,16);
 
 var size = ["bot","mid","top"];
 for (var i = 0; i < 3; i++)

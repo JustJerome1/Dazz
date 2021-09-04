@@ -79,6 +79,14 @@ switch my_hitboxID.attack
 		sound_play(asset_get("sfx_ori_charged_flame_hit"),false,0,0.85,0.85)
 		//sound_play(asset_get("sfx_zetter_fireball_fire"),false,0,0.35,1.65)
 		break;
+	case AT_DSPECIAL_2:
+		if my_hitboxID.hbox_num == 3
+		{
+			my_hitboxID.otto_hitpause = 1;
+			sound_play(asset_get("sfx_absa_kickhit"));
+			sound_play(asset_get("sfx_absa_concentrate"));
+		}
+		break;
 }
 
 //Grabs player
