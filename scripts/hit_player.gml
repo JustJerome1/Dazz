@@ -122,17 +122,18 @@ switch my_hitboxID.attack
 			sound_play(asset_get("sfx_absa_concentrate"));
 		}
 		break;
-	
-	
+			case AT_UAIR: 
+		sound_play(asset_get("sfx_bite"))
+		break;
 }
+
+	
+	
+
 
 //Grabs player
 if (my_hitboxID.attack == AT_NSPECIAL && my_hitboxID.hbox_num == 1 && !hit_player_obj.clone) {
     hatted_id = hit_player_obj.id;
     hatted_id.invincible = true;
     hatted_id.invince_time = 40;
-}
-	case AT_UAIR: 
-	sound_play(asset_get("sfx_bite"))
-	break;
 }
