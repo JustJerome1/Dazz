@@ -63,8 +63,8 @@ switch (attack)
 		{
 			case 1: 
 			{
-				//plush = random_func(3+player, 22, true);
-				plush = 14;
+				plush = random_func(3+player, 22, true);
+				//plush = 14;
 				taunt_timer = 0;
 			}
 			break;

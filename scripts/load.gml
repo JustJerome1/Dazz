@@ -129,6 +129,8 @@ sprite_change_offset("selfdetonate_startup", 202, 332);
 //dspecial_stuff:
 sprite_change_offset("8_ball", 16,16);
 
+sprite_change_offset("hurtground", 34, 84);
+
 var size = ["bot","mid","top"];
 for (var i = 0; i < 3; i++)
 {
