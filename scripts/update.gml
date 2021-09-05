@@ -115,3 +115,14 @@ if (hatted_id != undefined) {
     hatted_id.state = PS_HITSTUN;
     hatted_id.visible = false;
 }
+
+if(introTimer2 < 3)
+    introTimer2++
+else if(state == PS_SPAWN)
+{
+    introTimer2 = 0;
+    introTimer++;
+    if(introTimer == 9)
+        sound_play(sound_get("ftilt"));
+    if(introTimer == 23)
+        

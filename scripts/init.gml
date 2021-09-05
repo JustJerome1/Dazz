@@ -177,12 +177,12 @@ otto_create = hit_fx_create(sprite_get("hfx_small_black"), 32)
 explosion = hit_fx_create(sprite_get("selfdetonate"), 55)
 active = 0;
 
-#define foo
-/// foo(a, b, c, d, ?e = undefined, ?f = undefined, g = 10, h = "ay lmao";)
-var a = argument[0], b = argument[1], c = argument[2], d = argument[3];
-var e = argument_count > 4 ? argument[4] : undefined;
-var f = argument_count > 5 ? argument[5] : undefined;
-var g = argument_count > 6 ? argument[6] : 10;
-var h = argument_count > 7 ? argument[7] : "ay lmao";;
-
-return (a / b) + power(sin(c),2) - d;
+//intro
+introTimer = -4;
+introTimer2 = 0;
+//hatless dash speeds
+base_initial_dash_speed = initial_dash_speed;
+base_dash_speed = dash_speed;
+hatless_initial_dash_speed = 8;
+hatless_dash_speed = 7;
+//e
