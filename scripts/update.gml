@@ -125,4 +125,5 @@ else if(state == PS_SPAWN)
     if(introTimer == 9)
         sound_play(sound_get("ftilt"));
     if(introTimer == 23)
-        
+        sound_play(sound_get("clyde_2"));
+}

@@ -21,8 +21,10 @@ base_initial_dash_speed = initial_dash_speed;
 base_dash_speed = dash_speed;
 hatless_initial_dash_speed = 8;
 hatless_dash_speed = 7;
+//intro
+introTimer = -4;
+introTimer2 = 0;
 //e
-
 dash_turn_time = 12;
 dash_turn_accel = 1.5;
 dash_stop_time = 6;

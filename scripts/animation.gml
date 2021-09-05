@@ -137,3 +137,18 @@ if instance_exists(hat_object) {
     crouch_recovery_frames = 4;
 }
     
+if(state == PS_SPAWN)
+{
+    if(introTimer < 27 && introTimer >= 0)
+    {
+        sprite_index = sprite_get("intro");
+        image_index = introTimer;
+    }
+    else if (introTimer < 0)
+    {
+        sprite_index = sprite_get("intro");
+        image_index = 0;
+    } 
+    else
+        sprite_index = sprite_get("idle");
+}

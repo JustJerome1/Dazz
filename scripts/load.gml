@@ -43,6 +43,7 @@ sprite_change_offset("uspecial", 64, 94);
 sprite_change_offset("dspecial", 62, 126);
 sprite_change_offset("taunt", 72, 80);
 sprite_change_offset("taunt_roll", 38, 110);
+sprite_change_offset("intro", 116, 120);
 
 sprite_change_offset("hud", 26, 22);
 sprite_change_offset("hudslots", 26, 16);
