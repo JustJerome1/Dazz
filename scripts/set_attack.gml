@@ -134,8 +134,8 @@ if instance_exists(hat_object) {
             set_attack_value(AT_DAIR, AG_HURTBOX_SPRITE, sprite_get("dair_hurt"));
             break;
         case AT_NAIR:
-            set_attack_value(AT_DAIR, AG_SPRITE, sprite_get("nair"));
-            set_attack_value(AT_DAIR, AG_HURTBOX_SPRITE, sprite_get("nair_hurt"));
+            set_attack_value(AT_NAIR, AG_SPRITE, sprite_get("nair"));
+            set_attack_value(AT_NAIR, AG_HURTBOX_SPRITE, sprite_get("nair_hurt"));
             break;
         case AT_BAIR:
             set_attack_value(AT_BAIR, AG_SPRITE, sprite_get("bair"));

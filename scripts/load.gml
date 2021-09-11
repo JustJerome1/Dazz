@@ -16,9 +16,9 @@ sprite_change_offset("land", 44, 52);
 sprite_change_offset("landinglag", 44, 52);
 sprite_change_offset("waveland", 44, 52);
 
-sprite_change_offset("parry", 140, 190);
-sprite_change_offset("roll_forward", 42, 72);
-sprite_change_offset("roll_backward", 42, 72);
+sprite_change_offset("parry", 37, 122);
+sprite_change_offset("roll_forward", 34, 76);
+sprite_change_offset("roll_backward", 34, 76);
 sprite_change_offset("airdodge", 30, 78);
 sprite_change_offset("tech", 32, 62);
 
@@ -37,7 +37,7 @@ sprite_change_offset("dair", 44, 84);
 sprite_change_offset("fstrong", 48, 126);
 sprite_change_offset("ustrong", 104, 158);
 sprite_change_offset("dstrong", 102, 176);
-sprite_change_offset("nspecial", 53, 112);
+sprite_change_offset("nspecial", 42, 80);
 sprite_change_offset("fspecial", 42,80);
 sprite_change_offset("uspecial", 64, 94);
 sprite_change_offset("dspecial", 62, 126);
@@ -71,7 +71,7 @@ sprite_change_offset("hat_mask", 11, 26);
 sprite_change_offset("idle_hatless", 46, 78);
 sprite_change_offset("crouch_hatless", 36, 68);
 sprite_change_offset("walk_hatless", 34, 80);
-sprite_change_offset("walkturn_hatless", 18, 74); //needs sprite
+sprite_change_offset("walkturn_hatless", 18, 66);
 sprite_change_offset("dash_hatless", 50, 70);
 sprite_change_offset("dashstart_hatless", 40, 68);
 sprite_change_offset("dashstop_hatless", 46, 70);
@@ -82,8 +82,8 @@ sprite_change_offset("jump_hatless", 64, 90);
 sprite_change_offset("doublejump_hatless", 64, 90);
 sprite_change_offset("walljump_hatless", 32, 68);
 sprite_change_offset("pratfall_hatless", 48, 86);
-sprite_change_offset("land_hatless", 40, 70);
-sprite_change_offset("landinglag_hatless", 40, 70);
+sprite_change_offset("land_hatless", 40, 48);
+sprite_change_offset("landinglag_hatless", 40, 48);
 sprite_change_offset("waveland_hatless", 44, 52);
 
 sprite_change_offset("parry_hatless", 32, 68);

@@ -132,7 +132,7 @@ switch my_hitboxID.attack
 
 
 //Grabs player
-if (my_hitboxID.attack == AT_NSPECIAL && my_hitboxID.hbox_num == 1 && !hit_player_obj.clone) {
+if (my_hitboxID.attack == AT_NSPECIAL && (my_hitboxID.hbox_num == 3 || my_hitboxID.hbox_num == 1) && !hit_player_obj.clone) {
     hatted_id = hit_player_obj.id;
     hatted_id.invincible = true;
     hatted_id.invince_time = 40;

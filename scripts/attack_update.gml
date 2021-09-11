@@ -404,6 +404,8 @@ if (attack == AT_NSPECIAL){
 		window = 9;
 		window_timer = 0;
 	}
+
+	move_cooldown[ AT_NSPECIAL ] = 60;
 }
     
     //#endregion
